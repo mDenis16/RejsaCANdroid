@@ -1,19 +1,23 @@
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 // From https://simpleicons.org/?q=expo
 import ExpoLogo from "./assets/expo.svg";
+
+import Clusters from "./Layouts/InstrumentCluster/Cluster";
 
 export default function App() {
   return (
     <View
       style={{
-        backgroundColor: "black",
+        backgroundColor: "gray",
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        overflow: 'hidden',
+        width: '100%',
+        height: '100%'
       }}
     >
-      <ExpoLogo width={120} height={120} fill="white" />
+     <Clusters></Clusters>
+  
     </View>
   );
 }
